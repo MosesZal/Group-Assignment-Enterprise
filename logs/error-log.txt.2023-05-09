@@ -1,0 +1,11 @@
+09 May 2023 | 06:50:52 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Request method 'PUT' not supported
+09 May 2023 | 06:51:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 6]
+09 May 2023 | 06:51:37 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+09 May 2023 | 06:52:16 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+09 May 2023 | 06:52:35 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+09 May 2023 | 19:20:31 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!

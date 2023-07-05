@@ -1,0 +1,142 @@
+01 May 2023 | 03:07:21 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+01 May 2023 | 03:07:21 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+01 May 2023 | 03:10:28 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:11:09 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:11:20 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:12:01 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:12:06 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:12:13 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:12:40 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:12:45 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:13:26 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 2]
+01 May 2023 | 03:13:32 * ERROR * com.project.demo.RestControllers.AdminRestController * addCar * An attempt to create a new car has failed!
+01 May 2023 | 03:13:39 * ERROR * com.project.demo.RestControllers.AdminRestController * addCar * An attempt to create a new car has failed!
+01 May 2023 | 03:13:45 * ERROR * com.project.demo.RestControllers.AdminRestController * addCar * An attempt to create a new car has failed!
+01 May 2023 | 03:14:00 * ERROR * com.project.demo.RestControllers.AdminRestController * addCustomer * An attempt to create a new customer has failed!
+01 May 2023 | 03:14:37 * ERROR * com.project.demo.RestControllers.AdminRestController * addCar * An attempt to create a new car has failed!
+01 May 2023 | 03:14:51 * ERROR * com.project.demo.RestControllers.AdminRestController * addCar * An attempt to create a new car has failed!
+01 May 2023 | 03:14:57 * ERROR * com.project.demo.RestControllers.AdminRestController * addCar * An attempt to create a new car has failed!
+01 May 2023 | 03:15:25 * ERROR * com.project.demo.RestControllers.AdminRestController * updateCar * An attempt to update a car has failed!
+01 May 2023 | 03:15:34 * ERROR * com.project.demo.RestControllers.AdminRestController * updateCar * An attempt to update a car has failed!
+01 May 2023 | 03:15:52 * ERROR * com.project.demo.RestControllers.AdminRestController * updateCar * An attempt to update a car has failed!
+01 May 2023 | 03:15:59 * ERROR * com.project.demo.RestControllers.AdminRestController * updateCar * An attempt to update a car has failed!
+02 maj 2023 | 09:47:08 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * detached entity passed to persist: com.project.demo.Entities.Customer; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.project.demo.Entities.Customer
+02 maj 2023 | 09:47:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * detached entity passed to persist: com.project.demo.Entities.Customer; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.project.demo.Entities.Customer
+02 maj 2023 | 10:31:53 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * detached entity passed to persist: com.project.demo.Entities.Customer; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.project.demo.Entities.Customer
+02 maj 2023 | 10:33:55 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * detached entity passed to persist: com.project.demo.Entities.Customer; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.project.demo.Entities.Customer
+02 maj 2023 | 10:34:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * detached entity passed to persist: com.project.demo.Entities.Customer; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.project.demo.Entities.Customer
+05 May 2023 | 00:26:36 * ERROR * com.project.demo.Services.CustomerServiceImpl * addCustomer * An attempt to create a new customer has failed!
+05 May 2023 | 00:26:48 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+05 May 2023 | 00:26:55 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+05 May 2023 | 00:26:55 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+05 May 2023 | 00:27:05 * ERROR * com.project.demo.Services.CustomerServiceImpl * addCustomer * An attempt to create a new customer has failed!
+05 May 2023 | 01:01:58 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+05 May 2023 | 01:02:05 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+05 May 2023 | 01:02:15 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+05 May 2023 | 01:02:34 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+05 May 2023 | 01:02:53 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+05 May 2023 | 02:34:42 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:34:49 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:34:56 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:57:11 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 01:45:27 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:47:50 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:49:03 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:49:06 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:53:25 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:11 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:06:47 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:10:28 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:10:29 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * No class com.project.demo.Entities.Booking entity with id 1 exists!
+06 May 2023 | 02:11:04 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:11:10 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * No class com.project.demo.Entities.Booking entity with id 1 exists!
+06 May 2023 | 02:16:03 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:36:35 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:39 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:42 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:43 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:44 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 04:04:30 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 04:05:02 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 04:05:02 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 04:05:15 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:17:43 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]
+06 May 2023 | 22:17:43 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:19:01 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Customer not found with Id : '6'
+06 May 2023 | 22:19:14 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]
+06 May 2023 | 22:19:14 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:20:29 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]
+06 May 2023 | 22:20:29 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:20 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:27 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:27 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:30 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:30 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:33 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:33 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:33:06 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+06 May 2023 | 22:33:17 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:33:26 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:33:56 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:34:02 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:35:28 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:39:07 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+06 May 2023 | 22:39:54 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 2]
+06 May 2023 | 22:40:00 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+06 May 2023 | 22:42:38 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:42:46 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:43:08 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:43:16 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:51:04 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Customer not found with Id : '0'
+06 May 2023 | 22:52:31 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]
+06 May 2023 | 22:52:31 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:52:48 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:53:07 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:53:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:54:05 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]
+06 May 2023 | 22:54:05 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:54:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:55:58 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Customer not found with Id : '9'
+06 May 2023 | 23:58:22 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * No class com.project.demo.Entities.Car entity with id 7 exists!
+06 May 2023 | 23:59:20 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FK85WYOQ9J8YOITHYU0RWBE91EY: PUBLIC.BOOKING FOREIGN KEY(CARID) REFERENCES PUBLIC.CAR(CARID) (4)"; SQL statement:
+delete from Car where carID=? [23503-214]
+06 May 2023 | 23:59:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FK85WYOQ9J8YOITHYU0RWBE91EY: PUBLIC.BOOKING FOREIGN KEY(CARID) REFERENCES PUBLIC.CAR(CARID) (4)"; SQL statement:
+delete from Car where carID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement

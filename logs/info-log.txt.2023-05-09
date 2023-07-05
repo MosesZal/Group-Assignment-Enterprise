@@ -1,0 +1,25 @@
+09 May 2023 | 06:49:13 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+09 May 2023 | 06:49:15 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+09 May 2023 | 06:49:15 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09 May 2023 | 06:49:15 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09 May 2023 | 06:49:16 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09 May 2023 | 06:50:52 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Request method 'PUT' not supported
+09 May 2023 | 06:51:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 6]
+09 May 2023 | 06:51:37 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+09 May 2023 | 06:52:16 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+09 May 2023 | 06:52:35 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+09 May 2023 | 06:53:14 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: MosesZal!
+09 May 2023 | 06:53:51 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+09 May 2023 | 19:13:16 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+09 May 2023 | 19:13:19 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+09 May 2023 | 19:13:19 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09 May 2023 | 19:13:19 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+09 May 2023 | 19:13:20 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09 May 2023 | 19:13:33 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Frankie!
+09 May 2023 | 19:20:31 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+09 May 2023 | 19:46:14 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

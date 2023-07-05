@@ -1,0 +1,354 @@
+08 May 2023 | 00:16:19 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 00:16:21 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 00:16:21 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 00:16:21 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:16:22 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:17:27 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:17:34 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 00:18:03 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: FUN 3169!
+08 May 2023 | 00:18:27 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:18:37 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:19:57 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+08 May 2023 | 00:20:42 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+08 May 2023 | 00:22:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+08 May 2023 | 00:23:17 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:23:27 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 00:25:37 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:25:38 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:25:38 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:25:40 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:25:40 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:25:40 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:26:01 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:26:03 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 00:26:05 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 00:26:05 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 00:26:05 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:26:06 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:26:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Make" can't be blank!', propertyPath=make, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Make" can't be blank!'}
+]
+08 May 2023 | 00:26:45 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 00:26:45 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 00:26:45 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 00:28:50 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:28:50 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:28:50 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:28:50 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:28:52 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:28:53 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:29:00 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 00:29:00 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 00:29:00 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 00:34:34 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:34:35 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:34:35 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:34:35 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:34:37 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:34:37 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:38:51 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:38:52 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:38:52 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:38:52 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:38:54 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:38:54 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:39:19 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number FUN 369 is successfullyupdated!
+08 May 2023 | 00:39:22 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number FUN 369 is successfullyupdated!
+08 May 2023 | 00:39:28 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:39:36 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:39:45 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:40:00 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:40:33 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:40:37 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 00:40:38 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 00:40:39 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 00:40:39 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:40:39 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:40:49 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:45:00 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:45:01 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:45:01 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:45:01 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 00:45:03 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 00:45:03 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 00:45:04 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 00:45:11 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:45:16 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: FUN 3619!
+08 May 2023 | 00:48:48 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 01:52:00 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 01:52:02 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 01:52:02 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 01:52:03 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 01:52:03 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 01:53:10 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:53:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+]
+08 May 2023 | 01:53:45 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:53:51 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Make" can't be blank!', propertyPath=make, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Make" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 01:54:16 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:54:21 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Rental price per day" can't be blank or 0!', propertyPath=rentalPricePerDay, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Rental price per day" can't be blank or 0!'}
+]
+08 May 2023 | 01:54:28 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: FUN 3169!
+08 May 2023 | 01:54:43 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 01:54:53 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 01:55:04 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number FUN 369 is successfullyupdated!
+08 May 2023 | 01:55:13 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 01:55:13 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 01:55:13 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 01:55:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 01:55:49 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:56:09 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 01:56:09 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 01:56:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 01:57:07 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user11!
+08 May 2023 | 01:57:22 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:58:02 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:58:23 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:59:40 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 01:59:43 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 01:59:45 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 01:59:45 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 01:59:45 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 01:59:46 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 02:00:07 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:00:18 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:00:24 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user11!
+08 May 2023 | 02:00:32 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:00:32 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 6 */ 'user1@gma1il.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:00:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 6 */ 'user1@gma1il.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:01:11 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:01:18 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:01:30 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: usear1!
+08 May 2023 | 02:03:12 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 02:03:15 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 02:03:16 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 02:03:17 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 02:03:17 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 02:03:17 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 02:03:23 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:03:23 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:03:23 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:03:30 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:04:15 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:04:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:04:33 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:04:45 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:04:45 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:04:45 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:04:52 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JayS3on!
+08 May 2023 | 02:05:05 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:05:16 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:05:28 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:05:40 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaySaon!
+08 May 2023 | 02:05:55 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+08 May 2023 | 02:05:55 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaySaofn!
+08 May 2023 | 02:06:09 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaySaodfn!
+08 May 2023 | 02:06:46 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:06:46 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:06:46 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:08:20 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:08:20 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:08:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:08:24 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:08:32 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:08:32 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:08:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:08:37 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:10:27 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 02:10:29 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 02:10:31 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 02:10:31 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 02:10:31 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 02:10:32 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 02:10:37 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:10:37 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:10:37 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:10:44 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 02:10:52 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:00 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaySdon!
+08 May 2023 | 02:11:13 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:23 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:32 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:37 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:42 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaySdodn!
+08 May 2023 | 02:12:00 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+08 May 2023 | 02:12:00 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaysdSdodn!
+08 May 2023 | 02:12:29 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: JaysdSddodn!
+08 May 2023 | 02:13:28 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:13:56 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 02:13:56 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 7 */ 'jason.walk@hdotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:13:56 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 7 */ 'jason.walk@hdotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:14:05 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 02:14:35 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: FUN 3619!
+08 May 2023 | 02:14:47 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:14:52 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:15:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+]
+08 May 2023 | 02:16:13 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:16:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Make" can't be blank!', propertyPath=make, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Make" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Rental price per day" can't be blank or 0!', propertyPath=rentalPricePerDay, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Rental price per day" can't be blank or 0!'}
+]
+08 May 2023 | 02:16:31 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:16:33 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: FUN 36192!
+08 May 2023 | 02:16:57 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 02:16:59 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 02:17:01 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 02:17:01 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 02:17:01 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 02:17:02 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 02:17:47 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 02:17:57 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 02:18:05 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 02:18:11 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number FUN 369 is successfullyupdated!
+08 May 2023 | 02:19:25 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 02:40:57 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 02:40:59 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 02:40:59 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 02:40:59 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 02:41:00 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 02:41:46 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Jay2Son!
+08 May 2023 | 02:42:03 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 22:34:38 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 22:34:40 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 22:34:40 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 22:34:40 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 22:34:41 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 22:38:35 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:42:29 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:46:29 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:49:21 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:53:03 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:53:06 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:53:09 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:55:25 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 22:55:25 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 22:55:25 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 22:56:52 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 22:56:52 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 22:56:52 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 22:59:01 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+]
+08 May 2023 | 22:59:13 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 23:00:11 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 23:00:14 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 23:00:20 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 23:00:25 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+08 May 2023 | 23:00:25 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 23:00:25 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 23:00:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+]
+08 May 2023 | 23:02:50 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: MosesZal!
+08 May 2023 | 23:08:26 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+08 May 2023 | 23:08:26 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Katja!
+08 May 2023 | 23:12:10 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Frankie!
+08 May 2023 | 23:16:03 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+08 May 2023 | 23:16:03 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Rayka!
+08 May 2023 | 23:18:17 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 23:18:43 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08 May 2023 | 23:18:48 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+08 May 2023 | 23:18:50 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+08 May 2023 | 23:18:50 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08 May 2023 | 23:18:50 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08 May 2023 | 23:18:51 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08 May 2023 | 23:18:54 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Frankie!
+08 May 2023 | 23:19:14 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+08 May 2023 | 23:19:14 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Katja!
+08 May 2023 | 23:19:23 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+08 May 2023 | 23:19:23 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: Rayka!

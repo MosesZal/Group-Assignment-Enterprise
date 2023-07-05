@@ -1,0 +1,11 @@
+13 Jun 2023 | 03:52:15 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+13 Jun 2023 | 03:52:18 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+13 Jun 2023 | 03:52:18 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13 Jun 2023 | 03:52:18 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+13 Jun 2023 | 03:52:19 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13 Jun 2023 | 03:58:03 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * detached entity passed to persist: com.project.demo.Entities.Customer; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.project.demo.Entities.Customer
+13 Jun 2023 | 03:58:39 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+13 Jun 2023 | 03:59:35 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+13 Jun 2023 | 04:00:02 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+13 Jun 2023 | 04:00:56 * INFO * com.project.demo.RestControllers.CustomerRestController * makeABooking * A booking is made on car: null on date: 2023-06-13
+13 Jun 2023 | 04:01:37 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

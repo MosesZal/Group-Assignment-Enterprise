@@ -1,0 +1,418 @@
+03 maj 2023 | 08:22:29 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+03 maj 2023 | 08:22:30 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+03 maj 2023 | 08:22:30 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03 maj 2023 | 08:22:30 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03 maj 2023 | 08:22:30 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03 maj 2023 | 08:22:40 * INFO * com.project.demo.RestControllers.CustomerRestController * cancelBooking * John Doecancelled a booking on car: V60 on date: 2023-04-25
+03 maj 2023 | 08:24:13 * INFO * com.project.demo.RestControllers.AdminRestController * deleteBooking * A booking is deleted by admin. Customer: John DoeCar: V60 Date: 2023-04-25
+03 maj 2023 | 08:24:46 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 00:26:09 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 May 2023 | 00:26:11 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 May 2023 | 00:26:12 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 May 2023 | 00:26:12 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 00:26:13 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 00:26:36 * ERROR * com.project.demo.Services.CustomerServiceImpl * addCustomer * An attempt to create a new customer has failed!
+05 May 2023 | 00:26:48 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+05 May 2023 | 00:26:55 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+05 May 2023 | 00:26:55 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+05 May 2023 | 00:26:55 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+05 May 2023 | 00:27:05 * ERROR * com.project.demo.Services.CustomerServiceImpl * addCustomer * An attempt to create a new customer has failed!
+05 May 2023 | 00:27:23 * INFO * com.project.demo.Services.CustomerServiceImpl * addCustomer * Customer created successfully with user name: fddf!
+05 May 2023 | 00:32:04 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 00:32:05 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 00:32:05 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 00:32:07 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 00:32:07 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 00:32:07 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 00:56:33 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 01:01:52 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 May 2023 | 01:01:55 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 May 2023 | 01:01:55 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 May 2023 | 01:01:55 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 01:01:56 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 01:01:58 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+05 May 2023 | 01:02:05 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+05 May 2023 | 01:02:15 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+05 May 2023 | 01:02:23 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: ATM 10z5!
+05 May 2023 | 01:02:34 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+05 May 2023 | 01:02:53 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+05 May 2023 | 01:03:10 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number ATM 105 is successfullyupdated!
+05 May 2023 | 02:02:43 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 02:34:27 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 May 2023 | 02:34:29 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 May 2023 | 02:34:29 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 May 2023 | 02:34:29 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 02:34:30 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 02:34:42 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:34:49 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:34:56 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:34:59 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+05 May 2023 | 02:34:59 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user12!
+05 May 2023 | 02:35:35 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 02:56:39 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 May 2023 | 02:56:41 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 May 2023 | 02:56:41 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 May 2023 | 02:56:41 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 02:56:42 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 02:57:11 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+05 May 2023 | 02:57:18 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+05 May 2023 | 02:57:18 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user14!
+05 May 2023 | 02:57:52 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: u4ser14!
+05 May 2023 | 02:58:30 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 May 2023 | 02:58:34 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 May 2023 | 02:58:36 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 May 2023 | 02:58:36 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 May 2023 | 02:58:36 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 May 2023 | 02:58:37 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 May 2023 | 02:59:34 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: moseszal!
+05 May 2023 | 03:30:58 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 maj 2023 | 10:29:59 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 maj 2023 | 10:30:01 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 maj 2023 | 10:30:01 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 maj 2023 | 10:30:01 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 maj 2023 | 10:30:02 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 maj 2023 | 10:30:10 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer successfully!
+05 maj 2023 | 10:30:33 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 maj 2023 | 10:43:13 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 maj 2023 | 10:43:15 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 maj 2023 | 10:43:15 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 maj 2023 | 10:43:15 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 maj 2023 | 10:43:16 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 maj 2023 | 10:43:22 * INFO * com.project.demo.Services.CustomerServiceImpl * customerDeleteLogic * Admin deleted customer successfully!
+05 maj 2023 | 10:43:52 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+05 maj 2023 | 11:01:24 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+05 maj 2023 | 11:01:26 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+05 maj 2023 | 11:01:26 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05 maj 2023 | 11:01:26 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+05 maj 2023 | 11:01:27 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05 maj 2023 | 11:01:41 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 01:44:58 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 01:45:01 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 01:45:01 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 01:45:01 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 01:45:02 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 01:45:27 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:47:50 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:49:03 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:49:06 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:52:20 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 01:52:27 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 01:52:29 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 01:52:29 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 01:52:29 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 01:52:30 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 01:53:12 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 01:53:17 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 01:53:19 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 01:53:19 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 01:53:19 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 01:53:20 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 01:53:25 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 01:59:31 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 01:59:35 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 01:59:38 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 01:59:38 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 01:59:38 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 01:59:39 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 01:59:53 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 01:59:57 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 01:59:59 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 01:59:59 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 01:59:59 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:00:00 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:00:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:11 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:00:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:05:52 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:06:41 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:06:43 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:06:43 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:06:43 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:06:44 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:06:47 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:10:11 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:10:16 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:10:17 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:10:18 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:10:18 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:10:18 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:10:28 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:10:29 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * No class com.project.demo.Entities.Booking entity with id 1 exists!
+06 May 2023 | 02:10:51 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:10:55 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:10:56 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:10:56 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:10:56 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:10:57 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:11:04 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:11:10 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * No class com.project.demo.Entities.Booking entity with id 1 exists!
+06 May 2023 | 02:13:06 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:13:10 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:13:12 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:13:12 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:13:12 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:13:13 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:13:22 * INFO * com.project.demo.RestControllers.AdminRestController * deleteBooking * A booking is deleted by admin. Customer: John DoeCar: V60 Date: 2023-05-06
+06 May 2023 | 02:15:36 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:15:40 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:15:42 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:15:42 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:15:43 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:15:43 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:16:03 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Cannot invoke "com.project.demo.Entities.Customer.getFullName()" because the return value of "com.project.demo.Entities.Booking.getCustomer()" is null
+06 May 2023 | 02:28:57 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:30:39 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:30:41 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:30:41 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:30:42 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:30:42 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:30:58 * INFO * com.project.demo.RestControllers.AdminRestController * deleteBooking * A booking is deleted by admin. Customer: John DoeCar: V60 Date: 2023-05-06
+06 May 2023 | 02:32:56 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 02:36:29 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 02:36:31 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 02:36:31 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 02:36:31 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 02:36:32 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 02:36:35 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:39 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:42 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:43 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:36:44 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Required request body is missing: public java.util.List<com.project.demo.Entities.Booking> com.project.demo.RestControllers.CustomerRestController.getAllMyBookings(com.project.demo.Entities.Customer)
+06 May 2023 | 02:39:26 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 04:01:54 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 04:01:55 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 04:01:56 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 04:01:56 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 04:01:56 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 04:04:30 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 04:05:02 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 04:05:02 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 04:05:02 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QOCKYKYP7U2C0R9T72DFC04C_INDEX_5 ON PUBLIC.CUSTOMER(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'user1' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 04:05:15 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 04:05:21 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user12!
+06 May 2023 | 04:10:55 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 04:11:00 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 04:11:01 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 04:11:02 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 04:11:02 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 04:11:02 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 04:11:17 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:17:05 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:17:07 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:17:07 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:17:07 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:17:08 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:17:43 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23503, SQLState: 23503
+06 May 2023 | 22:17:43 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]
+06 May 2023 | 22:17:43 * INFO * org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl * release * HHH000010: On release of batch it still contained JDBC statements
+06 May 2023 | 22:17:43 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:19:01 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Customer not found with Id : '6'
+06 May 2023 | 22:19:14 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23503, SQLState: 23503
+06 May 2023 | 22:19:14 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]
+06 May 2023 | 22:19:14 * INFO * org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl * release * HHH000010: On release of batch it still contained JDBC statements
+06 May 2023 | 22:19:14 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:20:22 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:20:22 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:20:22 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:20:24 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:20:26 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:20:26 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:20:29 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23503, SQLState: 23503
+06 May 2023 | 22:20:29 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]
+06 May 2023 | 22:20:29 * INFO * org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl * release * HHH000010: On release of batch it still contained JDBC statements
+06 May 2023 | 22:20:29 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FKOAEGJ0J83E2QJFAH70G6S9KTT: PUBLIC.BOOKING FOREIGN KEY(CUSTOMERID) REFERENCES PUBLIC.CUSTOMER(CUSTOMERID) (1)"; SQL statement:
+delete from Customer where customerID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:21:15 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:21:17 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:21:17 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:21:42 * INFO * com.project.demo.Services.CustomerServiceImpl * customerDeleteLogic * Admin deleted customer with user name: null successfully!
+06 May 2023 | 22:22:03 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:22:03 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:22:03 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:22:05 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:22:06 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:22:06 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:22:09 * INFO * com.project.demo.Services.CustomerServiceImpl * customerDeleteLogic * Admin deleted customer with user name: null successfully!
+06 May 2023 | 22:22:58 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:23:36 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:23:38 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:23:38 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:23:38 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:23:39 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:24:19 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:24:21 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:24:21 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:25:39 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:25:39 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:25:39 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:30:04 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:30:12 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:30:14 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:30:14 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:30:14 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:30:15 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:32:13 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:32:14 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:32:14 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:32:14 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:32:16 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:32:16 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:32:20 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 22:32:20 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:27 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 22:32:27 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:27 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:30 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 22:32:30 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:30 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:33 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 22:32:33 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+06 May 2023 | 22:32:33 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_5Q3FT6RVLR5MAFOPT4F6KB0BN_INDEX_5 ON PUBLIC.CUSTOMER(PHONENUMBER NULLS FIRST) VALUES ( /* 1 */ '7613422' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:32:37 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user13!
+06 May 2023 | 22:32:48 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:32:51 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:32:53 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:32:53 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:32:53 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:32:54 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:33:06 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+06 May 2023 | 22:33:17 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:33:26 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:33:56 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:34:02 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:34:09 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user31!
+06 May 2023 | 22:34:45 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Address created successfully!
+06 May 2023 | 22:34:45 * INFO * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * Customer created successfully with user name: user331!
+06 May 2023 | 22:35:28 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+06 May 2023 | 22:38:27 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:38:30 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:38:32 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:38:32 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:38:32 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:38:33 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:39:07 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+06 May 2023 | 22:39:54 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 2]
+06 May 2023 | 22:40:00 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+06 May 2023 | 22:40:06 * INFO * com.project.demo.Services.CarServiceImpl * carAddingLogic * Car created successfully with registration number: FUN 3691!
+06 May 2023 | 22:40:29 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:40:33 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:40:35 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:40:36 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:40:36 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:40:36 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:41:20 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number FUN 369 is successfullyupdated!
+06 May 2023 | 22:41:31 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:41:34 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:41:36 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:41:36 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:41:37 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:41:38 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:42:38 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:42:46 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:43:08 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:43:16 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+06 May 2023 | 22:43:33 * INFO * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * The car with the registration number FUN 369 is successfullyupdated!
+06 May 2023 | 22:45:47 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:45:52 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:45:53 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:45:54 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:45:54 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:45:54 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:47:01 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:47:17 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:48:01 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:48:05 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:48:07 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:48:07 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:48:07 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:48:08 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:48:52 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:48:54 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:48:56 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:48:56 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:48:56 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:48:57 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:49:47 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:50:36 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:51:04 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:51:04 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Customer not found with Id : '0'
+06 May 2023 | 22:51:36 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:52:31 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:52:31 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 22:52:31 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]
+06 May 2023 | 22:52:31 * INFO * org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl * release * HHH000010: On release of batch it still contained JDBC statements
+06 May 2023 | 22:52:31 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:52:48 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:52:48 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:53:07 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:53:07 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:53:13 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:53:24 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:53:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:54:05 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: user1 !
+06 May 2023 | 22:54:05 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23505, SQLState: 23505
+06 May 2023 | 22:54:05 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]
+06 May 2023 | 22:54:05 * INFO * org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl * release * HHH000010: On release of batch it still contained JDBC statements
+06 May 2023 | 22:54:05 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+update Customer set addressID=?, email=?, fullName=?, phoneNumber=?, userName=? where customerID=? [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+06 May 2023 | 22:54:32 * INFO * com.project.demo.Services.CustomerServiceImpl * customerUpdatingLogic * Admin updated customer with user name: null !
+06 May 2023 | 22:54:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+06 May 2023 | 22:55:24 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:55:27 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:55:29 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:55:30 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:55:30 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:55:31 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:55:58 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Customer not found with Id : '9'
+06 May 2023 | 22:56:03 * INFO * com.project.demo.Services.CustomerServiceImpl * customerDeleteLogic * Admin deleted customer with user name: null successfully!
+06 May 2023 | 22:56:21 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 22:56:24 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 22:56:26 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 22:56:26 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 22:56:26 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 22:56:27 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 22:57:13 * INFO * com.project.demo.Services.CustomerServiceImpl * customerDeleteLogic * Admin deleted customer with user name: null successfully!
+06 May 2023 | 22:58:25 * INFO * org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl * perform * HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+06 May 2023 | 23:58:17 * INFO * org.hibernate.validator.internal.util.Version * <clinit> * HV000001: Hibernate Validator 6.2.5.Final
+06 May 2023 | 23:58:19 * INFO * org.hibernate.Version * logVersion * HHH000412: Hibernate ORM core version 5.6.15.Final
+06 May 2023 | 23:58:19 * INFO * org.hibernate.annotations.common.Version * <clinit> * HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06 May 2023 | 23:58:19 * INFO * org.hibernate.dialect.Dialect * <init> * HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+06 May 2023 | 23:58:20 * INFO * org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator * initiateService * HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06 May 2023 | 23:58:22 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * No class com.project.demo.Entities.Car entity with id 7 exists!
+06 May 2023 | 23:59:20 * WARN * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * SQL Error: 23503, SQLState: 23503
+06 May 2023 | 23:59:20 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Referential integrity constraint violation: "FK85WYOQ9J8YOITHYU0RWBE91EY: PUBLIC.BOOKING FOREIGN KEY(CARID) REFERENCES PUBLIC.CAR(CARID) (4)"; SQL statement:
+delete from Car where carID=? [23503-214]
+06 May 2023 | 23:59:20 * INFO * org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl * release * HHH000010: On release of batch it still contained JDBC statements
+06 May 2023 | 23:59:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["FK85WYOQ9J8YOITHYU0RWBE91EY: PUBLIC.BOOKING FOREIGN KEY(CARID) REFERENCES PUBLIC.CAR(CARID) (4)"; SQL statement:
+delete from Car where carID=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement

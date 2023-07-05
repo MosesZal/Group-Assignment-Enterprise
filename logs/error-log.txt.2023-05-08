@@ -1,0 +1,210 @@
+08 May 2023 | 00:17:27 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:17:34 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 00:18:27 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:18:37 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:19:57 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+08 May 2023 | 00:20:42 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+08 May 2023 | 00:22:12 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+08 May 2023 | 00:23:17 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:23:27 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 00:26:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Make" can't be blank!', propertyPath=make, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Make" can't be blank!'}
+]
+08 May 2023 | 00:26:45 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 00:26:45 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 00:29:00 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 00:29:00 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_6FBQTHB141POHFCHOM1CFPBP4_INDEX_1 ON PUBLIC.CAR(REGISTRATIONNUMBER NULLS FIRST) VALUES ( /* 5 */ 'FUN 369' )"; SQL statement:
+insert into Car (carID, booked, make, model, registrationNumber, rentalPricePerDay) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 00:39:28 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:39:36 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:39:45 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:40:00 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 00:40:49 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 00:45:04 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 00:45:11 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:53:10 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:53:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+]
+08 May 2023 | 01:53:45 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:53:51 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Make" can't be blank!', propertyPath=make, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Make" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+]
+08 May 2023 | 01:54:16 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 01:54:21 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Rental price per day" can't be blank or 0!', propertyPath=rentalPricePerDay, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Rental price per day" can't be blank or 0!'}
+]
+08 May 2023 | 01:54:43 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 01:54:53 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 01:55:13 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 01:55:13 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 01:55:24 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 01:55:49 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:56:09 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 01:56:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'user1@gmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 01:57:22 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:58:02 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 01:58:23 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:00:07 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:00:18 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:00:32 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 6 */ 'user1@gma1il.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:00:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 6 */ 'user1@gma1il.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:01:11 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:01:18 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:03:23 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:03:23 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:03:30 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:04:15 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:04:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:04:33 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:04:45 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:04:45 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:05:05 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:05:16 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:05:28 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:06:46 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:06:46 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:08:20 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:08:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:08:24 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:08:32 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:08:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:08:37 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+]
+08 May 2023 | 02:10:37 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:10:37 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:10:44 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 02:10:52 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:13 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:23 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:32 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:11:37 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 02:13:28 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:13:56 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 7 */ 'jason.walk@hdotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 02:13:56 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 7 */ 'jason.walk@hdotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 02:14:05 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Email" can't be blank!', propertyPath=email, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Email" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 02:14:47 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:14:52 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:15:09 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Registration number" can't be blank!', propertyPath=registrationNumber, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Registration number" can't be blank!'}
+]
+08 May 2023 | 02:16:13 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:16:20 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Car] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Make" can't be blank!', propertyPath=make, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Make" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Model" can't be blank!', propertyPath=model, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Model" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Rental price per day" can't be blank or 0!', propertyPath=rentalPricePerDay, rootBeanClass=class com.project.demo.Entities.Car, messageTemplate='"Rental price per day" can't be blank or 0!'}
+]
+08 May 2023 | 02:16:31 * ERROR * com.project.demo.Services.CarServiceImpl * carAddingLogic * An attempt to create a new car has failed!
+08 May 2023 | 02:17:47 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 02:17:57 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 02:18:05 * ERROR * com.project.demo.Services.CarServiceImpl * carUpdatingLogic * An attempt to update a car has failed!
+08 May 2023 | 22:38:35 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:42:29 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:46:29 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:49:21 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:53:03 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:53:06 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:53:09 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 22:55:25 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 22:55:25 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 22:56:52 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 22:56:52 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 22:59:01 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+]
+08 May 2023 | 22:59:13 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
+08 May 2023 | 23:00:11 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 23:00:14 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 23:00:20 * ERROR * com.project.demo.Services.CustomerServiceImpl * customerAddingLogic * An attempt to create a new customer has failed!
+08 May 2023 | 23:00:25 * ERROR * org.hibernate.engine.jdbc.spi.SqlExceptionHelper * logExceptions * Unique index or primary key violation: "PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]
+08 May 2023 | 23:00:25 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3QGG01QOJCMBDP47DKAOM9X45_INDEX_5 ON PUBLIC.CUSTOMER(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'jason.walk@hotmail.com' )"; SQL statement:
+insert into Customer (customerID, addressID, email, fullName, phoneNumber, userName) values (default, ?, ?, ?, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+08 May 2023 | 23:00:32 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+]
+08 May 2023 | 23:18:17 * ERROR * com.project.demo.Exceptions.ExceptionHandler * handleException * Validation failed for classes [com.project.demo.Entities.Customer] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='"User name" can't be blank!', propertyPath=userName, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"User name" can't be blank!'}
+	ConstraintViolationImpl{interpolatedMessage='"Phone number" can't be blank!', propertyPath=phoneNumber, rootBeanClass=class com.project.demo.Entities.Customer, messageTemplate='"Phone number" can't be blank!'}
+]
